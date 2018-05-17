@@ -1,9 +1,11 @@
 <html>
 <head>
 <script>
-var nods = document.getElementsByClassName('no-cache');
-for(var i=0;i<nods.length;i++){
-	nods[i].attributes['src'].value += "?a=" + Math.random();
+window.onload = function(){
+	var nods = document.getElementsByClassName("no-cache");
+	for(var i=0;i<nods.length;i++){
+		nods[i].src += ("?a=" + Math.random());
+	}
 }
 </script>
 </head>
