@@ -1,6 +1,12 @@
 <html>
+<head>
+var nods = document.getElementsByClassName('no-cache');
+for(var i=0;i<nods.length;i++){
+	nods[i].attributes['src'].value += "?a=" + Math.random();
+}
+</head>
 <body>
-<h3>Eicar test virus</h3><img src="samples/eicar.com"/></br>
-<h3>flash-cve-201804878</h3><img src="samples/flash-cve-2018-4878.vt"/></br>
+<h3>Eicar test virus</h3><img class="no-cache" src="samples/eicar.com"/></br>
+<h3>flash-cve-201804878</h3><img class="no-cache" src="samples/flash-cve-2018-4878.vt"/></br>
 </body>
 </html>
